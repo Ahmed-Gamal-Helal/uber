@@ -1,0 +1,224 @@
+ul .active {
+  border-bottom: 2px solid #316cb3; }
+  ul .active a {
+    border-right: none; }
+  ul .active i {
+    color: #316cb3; }
+
+body {
+  background: url("../images/bg-web.png"); }
+
+/***** Start NAvBAR ******/
+.navbar {
+  background-color: #FFF;
+  -webkit-box-shadow: 0.2em 0 0.6em #999;
+  -moz-box-shadow: 0.2em 0 0.6em #999;
+  box-shadow: 0.2em 0 0.6em #999; }
+  .navbar .container-fluid .navbar-brand {
+    padding: 0; }
+  .navbar .container-fluid a img {
+    padding: .6em; }
+  .navbar .container-fluid .navbar-collapse ul li a {
+    color: #888;
+    font-size: .9em;
+    font-family: "Cairo", sans-serif;
+    font-weight: bold; }
+  .navbar .container-fluid .navbar-collapse ul .s a {
+    border-right: 2px solid #EEE; }
+
+/***** End NAvBAR ******/
+.division-dep {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .division-dep .container .row .col-lg-6 .first-divison-dep,
+  .division-dep .container .row .col-lg-6 .sec-divison-dep {
+    padding: 1em;
+    background-color: #FFF;
+    border: .5px solid #EEE;
+    margin-bottom: 1em;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2);
+    margin: .75em; }
+    .division-dep .container .row .col-lg-6 .first-divison-dep .row .col-lg-6 .description-photo, .division-dep .container .row .col-lg-6 .first-divison-dep .row .col-lg-9 .description-photo,
+    .division-dep .container .row .col-lg-6 .sec-divison-dep .row .col-lg-6 .description-photo,
+    .division-dep .container .row .col-lg-6 .sec-divison-dep .row .col-lg-9 .description-photo {
+      margin-bottom: 2em; }
+
+.about {
+  border-left: 1px solid #999; }
+
+@media (max-width: 900px) {
+  .about {
+    border: 0; } }
+.footer {
+  background-color: #edeff2; }
+  .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-2 {
+    padding-top: 1.75em; }
+  .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul {
+    margin: 1em;
+    display: inline-flex; }
+    .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul li {
+      padding: 1em; }
+      .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul li a {
+        font-size: .8em;
+        font-weight: bold;
+        color: #555; }
+  .footer .container-fluid .row .col-lg-2 form {
+    margin-top: 1.5em; }
+    .footer .container-fluid .row .col-lg-2 form .form-control {
+      font-size: .75em; }
+
+.col-sm-12 {
+  padding: 0; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  height: 3.5em;
+  width: 3.5em;
+  margin-top: 16%;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-left: 1%;
+  opacity: 1;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2);
+  -moz-box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2);
+  box-shadow: 2px 2px 2px 1px rgba(100, 120, 155, 0.2); }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    color: #000; }
+
+.carousel-control-next {
+  margin-right: 1%; }
+
+.carousel-caption {
+  top: 10%;
+  color: #000;
+  font-weight: bold; }
+  .carousel-caption h3 {
+    font-size: 3em; }
+
+.carousel-item {
+  text-align: center;
+  margin-top: 12%; }
+  .carousel-item h3 {
+    font-size: 3.5em; }
+  .carousel-item p {
+    font-size: 1.25em;
+    margin-bottom: 2em; }
+  .carousel-item a {
+    color: #000;
+    background: #EEE;
+    padding: .25em 1em;
+    margin: 1em;
+    border-radius: .5em; }
+  .carousel-item img {
+    margin-top: 2em; }
+  .carousel-item .active {
+    border: 0; }
+
+@media (max-width: 900px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; } }
+@media (max-width: 600px) {
+  .carousel-item h3 {
+    font-size: 2em; }
+  .carousel-item p {
+    font-size: .75em;
+    margin-bottom: 2em; }
+  .carousel-item a {
+    font-size: .75em;
+    padding: .25em 1.5em;
+    margin: .75em;
+    border-radius: .5em; }
+  .carousel-item img {
+    margin-top: 1em; } }
+.nav-tabs {
+  border: 0;
+  margin: auto;
+  width: 16em; }
+  .nav-tabs li a {
+    color: #555;
+    padding: .5em 1em 1em 1em; }
+
+.show-up-content {
+  background-color: transparent;
+  padding-bottom: 2em; }
+  .show-up-content h3 {
+    padding: 1em .25em .25em .25em; }
+  .show-up-content p {
+    padding: 0 .25em 1em .25em; }
+  .show-up-content .tab-content .tab-pane {
+    padding-top: 4em; }
+    .show-up-content .tab-content .tab-pane .row div.topics .desc-displayed {
+      margin-top: 45%; }
+      .show-up-content .tab-content .tab-pane .row div.topics .desc-displayed h2 {
+        padding-bottom: 5%;
+        font-size: 3.5em;
+        font-weight: normal; }
+
+.footer {
+  background-color: #edeff2; }
+  .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-2 {
+    padding-top: 1.75em; }
+  .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul {
+    margin: 1em;
+    display: inline-flex; }
+    .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul li {
+      padding: 1em; }
+      .footer .container-fluid .row .col-lg-10 .left-footer .row .col-lg-10 ul li a {
+        font-size: .8em;
+        font-weight: bold;
+        color: #555; }
+  .footer .container-fluid .row .col-lg-2 form {
+    margin-top: 1.5em; }
+    .footer .container-fluid .row .col-lg-2 form .form-control {
+      font-size: .75em; }
+
+.col-sm-12 {
+  padding: 0; }
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: Roboto,Helvetica,Arial,sans-serif; }
+
+*, img {
+  max-width: 100%; }
+
+.row {
+  padding: 0;
+  margin: 0; }
+
+img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif; }
+  a:hover {
+    text-decoration: none; }
+
+button {
+  cursor: pointer; }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+.btn.focus, .btn:focus {
+  box-shadow: 0 !important; }
+
+/*# sourceMappingURL=main.css.map */
