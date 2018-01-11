@@ -1,5 +1,40 @@
-@import 'variables.scss';
+@import 'variables';
+/*** Start Global Properties ***/
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+*, img {
+    max-width: 100%;
+}
+img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row {
+    padding: 0;
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: $baseFont;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 ul {
+    list-style: none;
+    padding: 0;
     .active {
     border-bottom: 2px solid #316cb3;
         a {
@@ -10,65 +45,48 @@ ul {
             color: #316cb3;   
         }
     }
-    
 }
-body {
-    // background-color: #f5f5f5;
-    background: url('../images/bg-web.png');
-}
-
-@import 'upper-header.scss';
-@import 'footer.scss';
-@import 'carousel.scss';
-@import 'navtabs.scss';
-@import 'showup.scss';
-@import 'footer.scss';
-// @import 'left-table.scss';
-// @import 'form.scss';
-// @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-// @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-// @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-// @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-// @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-// @media (min-width:1281px) { /* hi-res laptops and desktops */ }
-html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-body {
-    font-family: Roboto,Helvetica,Arial,sans-serif;
-}
-*, img {
-    max-width: 100%;
-    
-}
-.row {
-    padding: 0;
-    margin: 0;
-}
-img {
-    // width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-ul {
-    list-style: none;
-    padding: 0;
+@mixin shadow($wide-shade) {
+    -webkit-box-shadow:     $wide-shade;
+       -moz-box-shadow:     $wide-shade;
+            -ms-shadow:     $wide-shade;
+            box-shadow:     $wide-shade;
 }
 
-a {
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: $baseFont;
-    &:hover {
-        text-decoration: none;
-    }
-}
-button {
-    cursor: pointer;
-}
+/*** End Global Properties ***/
+
+/*** Start Upper-Header ***/
+@import '_upper-header';
+/*** End Upper-Header ***/
+
+/*** Start Carousel ***/
+@import '_carousel';
+/*** End Carousel ***/
+
+/*** Start Divisions ***/
+@import '_divisions';
+/*** End Divisions ***/
+
+/*** Start NavTabs ***/
+@import '_navtabs';
+/*** End Navtabs ***/
+
+/*** Start Showup ***/
+@import '_showup';
+/*** End Showup ***/
+
+/*** Start About Us ***/
+@import '_about-us';
+/*** End About Us ***/
+
+/*** Start Pricing ***/
+@import '_pricing';
+/*** End Pricing ***/
+
+/*** Start Footer ***/
+@import '_footer';
+/*** End Footer ***/
+
 .clearfix {
     content: "";
     display: table;
