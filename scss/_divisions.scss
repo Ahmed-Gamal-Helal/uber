@@ -1,26 +1,70 @@
-.division-dep {
-    padding-top: 2em;
-    padding-bottom: 2em;
+.three-divisions {
     .container {
         .row {
-            .col-lg-6 {
-                .first-divison-dep,
-                .sec-divison-dep {
-                    @include shadow(4px 4px 3px rgba(255, 255, 255, .2));
-                    padding: 1em;
-                    background-color: #FFF;
-                    border: .5px solid #EEE;
-                    margin-bottom: 1em;
-                    margin: .75em;    
-                    .row {
-                        .col-lg-6, .col-lg-9 {
-                            .description-photo {
-                                margin-bottom: 2em;
-                            }
-                        }
-                    }
+            .first-partition,
+            .sec-partition,
+            .third-partition {
+                padding: 3em;
+                p {
+                    font-size: 1.2em;
+                    padding-top: .5em;
+                    color: #555;
+                }
+            }
+            .first-partition {
+                img {
+                    margin-top: .7em;
                 }
             }
         }
     }
+    a {
+        background-color: #A51037;
+        color: white;
+        padding: 1.25em 1.5em;
+        font-weight: bold;
+        margin-left: 5%;
+        &:hover {
+            transition: all .5s ease-in-out;
+            background-color: #7b0c29;
+            span {
+                transform: translateX(1.1);
+                padding-left: .5em;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+._style_28zWyA {
+    -webkit-transform: translate(0,4px) !important;
+    -ms-transform: translate(0,4px) !important;
+    -webkit-transition: all 400ms ease !important;
+    margin-top: -10px !important;
+    margin-left: 2em !important;
+    display: inline-block !important;
+    transform: translate(0,4px) !important;
+    transition: all 400ms ease !important;
+}
+#x {
+    fill: $white;
+}
+@media (max-width:700px) {
+    .three-divisions {
+        .container {
+            .row {
+                .first-partition,
+                .sec-partition,
+                .third-partition {
+                    padding: 0;
+                }
+                .third-partition {
+                    padding-bottom: 10%;
+                }
+            }
+            a {
+                // margin-left:;
+            }
+        }
+    }     
 }

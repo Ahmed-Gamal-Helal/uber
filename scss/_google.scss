@@ -1,0 +1,162 @@
+.google-maps {
+    .container {
+        .drive-pricing {
+            padding: 40% 2% 2% 2%;
+            h3 {
+                color: #999;
+                margin-bottom: 0;
+            }
+            h2 {
+                font-size: 2.5em;
+                padding-bottom: .5em; 
+                margin-top: 10px; 
+                color: #333;          
+            }
+            form {
+                .input-group {
+                    margin-bottom: 1em;
+                    input {
+                        border: 0;
+                        border-bottom: 1px solid #EEE;
+                        padding: 1.75em;
+                        border-radius: 0;
+                        &::placeholder {
+                            font-family: $baseFont;
+                            color: #999;
+                            font-size: 1.2em;
+                        }
+                    }
+                    span {
+                        background-color: transparent;
+                        border: 1px solid #EEE;
+                        border-left: 0;
+                        border-radius: 0;
+                        i.fa-location-arrow {
+                            color: #c7c7c7;
+                            // padding: .5em;
+                        }
+                    }
+                    span.s {
+                        padding: 6px 6px;
+                        background-color: #c7c7c7;
+                        .fa-long-arrow-right {
+                            color: $white;
+                            padding: .5em;                       }
+                    }
+                }
+            }
+        }
+        .map-direction {
+            padding: 10% 0 10% 0;
+        }
+    }
+}
+
+.where-to {
+    background-color: #f2f2f2;
+    .container {
+        .row {
+            margin-right: 5%;
+            margin-left: 5%;
+            background-color: $white;
+            .col-lg-9, .col-lg-3 {
+                padding: 0;
+            }
+            margin: 7% 0;
+            .words {
+                padding-right: 10%;
+                padding-top: 18%;
+                h4 {
+                    margin: 0;
+                    font-weight: 200;
+                    color: #494949;
+                    font-size: 23px;
+                    letter-spacing: -.02em;
+                    margin-bottom: 12px;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 36px;
+                    margin-bottom: 24px
+                }
+                p {
+                    font-size:16px;
+                    margin-bottom: 10%;
+                }
+                a {
+                    transition: all .5s ease-in-out;
+                    color: $main;
+                    font-weight: bold;
+                    i {
+                        margin-left: 6%;
+                        &:hover {
+                            transform: translateX(0, 4px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    .where-to {
+        .container {
+            .row {
+                .words {
+                    padding: 5%;
+                }
+            }
+        }
+    }
+}
+
+.video-req {
+    margin: 7% 0;
+}
+
+.form-style {
+    width: 400px;
+    background-color: #f8f8f9;
+    border-top: 10px solid #f2f2f2;
+    padding: .5em;
+    margin: 10%;
+    form {
+            // margin-bottom: 1em;
+        .sign-up {
+            padding: 1em;
+            span {
+                font-size: 2em;
+            }
+        }
+        .sign-in {
+            padding: 1em;
+        }
+        input {
+            border: 0;
+            border-bottom: 1px solid #EEE;
+            padding: 1.75em;
+            border-radius: 0;
+            &::placeholder {
+                font-family: $baseFont;
+                color: #999;
+                font-size: 1.2em;
+            }
+        
+        }
+        #drive {
+            background-color: #A51037;
+            color: white;
+            padding: 1.25em 1.5em;
+            font-weight: bold;
+            &:hover {
+                transition: all .5s ease-in-out;
+                background-color: #7b0c29;
+                span {
+                    transform: translateX(1.1);
+                    padding-left: .5em;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

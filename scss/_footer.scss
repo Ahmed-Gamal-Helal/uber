@@ -1,44 +1,157 @@
-.footer {
-    background-color: #edeff2; //#b4bfc6
-    .container-fluid {
-        .row {
-            .col-lg-10 {
-                .left-footer {
-                    .row {
-                        .col-lg-2 {
-                            padding-top: 1.75em;
+.heading-footer {
+    background-color: #f8f8f9;
+    padding: 3% 15%;
+    // margin-bottom: 8%;
+    h2 {
+        font-size: 3em;
+        font-weight: 300;
+    }
+    p {
+        font-size: 3em;
+        font-weight: normal;
+        color: #777;
+    }
+    .input-group {
+        margin: 5% 0;
+        input {
+            border: 0;
+            border-bottom: 1px solid #EEE;
+            padding: 1.75em;
+            border-radius: 0;
+            &::placeholder {
+                font-family: $baseFont;
+                color: #999;
+                font-size: 1.2em;
+            }
+        }
+        span {
+            background-color: $main;
+            border: 1px solid #EEE;
+            border-left: 0;
+            border-radius: 0;
+            a i.fa-location-arrow {
+                color: $white;
+                // padding: .5em;
+            }
+        }
+        span.s {
+            padding: 6px 6px;
+            background-color: $main;
+            .fa-long-arrow-right {
+                color: $white;
+                padding: .5em;                       }
+        }
+    }
+}
+footer {
+    background-color: $black;
+    .container {
+    }
+    .footer3 {
+        .container {
+            .row {
+                padding: 3em;
+                .col-lg-4 {
+                    .uber, .sign-up-to, .become {
+                        margin: .5em;
+                    }
+                    a {
+                        margin: 1em;
+                    }
+                    .uber {
+                        margin-top: 1.5em;
+                    }
+                    .second-link {
+                        background-color: white;
+                        color: black;
+                        font-weight: 600;
+                        padding: 1em 1.5em;
+                        &:hover {
+                            background-color:gainsboro;
+                            color: black;
                         }
-                        .col-lg-10 {
-                            ul {
-                                margin: 1em;
-                                display: inline-flex;
-                                li {
-                                    padding: 1em;
-                                    a {
-                                        font-size: .8em;
-                                        font-weight: bold;
-                                        color: #555;
-                                    }
-                                }
-                            }
+                    }
+                    .third-link {
+                        color: $white;
+                        border: 2px solid $white;
+                        padding: 1em 1.5em;
+                        background-color: transparent;
+                        &:hover {
+                            background-color:gainsboro;
+                            color: $black;
+                            border: 2px solid gainsboro;
                         }
                     }
                 }
             }
-            .col-lg-2 {
-                form {
-                    margin-top: 1.5em;
-                    .form-control {
-                        font-size: .75em;
+            .footer55 {
+                .container {
+                    .footer5 {
+
+                        .row {
+                            padding: 2% 0 0 0;
+                            .col-lg-3 {
+                                padding-left: 3em;
+                            }
+                            .x {
+                                padding-top: .5em;
+                                padding-left: 14%;
+                            }
+                            .s {
+                                padding-top: 1.2em;
+                                padding-left: 14%;
+                            }
+                            a {
+                                color: $white;
+                                margin: .5em;
+                                text-transform: none;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-.col-sm-12 {
-    padding: 0;
+.footer44 {
+    .container {
+        a {
+            color: $white;
+            text-transform: none;
+            font-family: $baseFont;
+        }
+        .footer4 {
+            .row {
+                .first-class,
+                .sec-class,
+                .third-class {
+                    ul {
+                        li {
+                            padding: 1em .5em;
+                            i {
+                                padding-right: .5em;
+                                color: $white;
+                            }
+                            a {
+                                // padding: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-@media (max-width:900px) {
-    
+.footer5 {
+    .row {
+        padding: 0;
+    }
+    ul {
+        li {
+            padding: .5em;
+        }
+    }
+}
+hr {
+    margin: 0;
 }
