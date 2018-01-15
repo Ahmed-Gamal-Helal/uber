@@ -210,12 +210,14 @@ nav.navbar {
   margin-right: 4px; }
 
 @media (max-width: 800px) {
-  .get-there .container .get-there-in h2 {
-    font-size: 2.5em;
-    padding-left: 7%; }
-  .get-there .container .get-there-in h3 {
-    font: 1.75em normal, 'Cairo';
-    padding-left: 7%; } }
+  .get-there {
+    padding-top: 12%; }
+    .get-there .container .get-there-in h2 {
+      font-size: 2.5em;
+      padding-left: 7%; }
+    .get-there .container .get-there-in h3 {
+      font: 1.75em normal, 'Cairo';
+      padding-left: 7%; } }
 .smiles .container-fluid {
   padding: 0; }
   .smiles .container-fluid .image-desc img {
